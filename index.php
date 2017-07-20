@@ -7,6 +7,7 @@ try {
 	    $stmt = $pdo->query('SELECT * FROM `group`');
 	    // On récupére directement tous les groupes.
 	    $groups = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
 }catch (Exeption $e) {
     echo 'fail to contact DB: ' .$e->getMessage();
     exit(1);
